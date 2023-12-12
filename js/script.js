@@ -24,29 +24,6 @@ $(window).on("load resize", function() {
   }
 });
 
-$(document).ready(function() {
-  // 檢查是否有 "時數資訊" 的錨點
-  if (window.location.hash === "#info-time") {
-    // 切換到時數資訊的頁籤
-    var infoTimeTab = document.getElementById("info-time");
-    if (infoTimeTab) {
-      infoTimeTab.classList.add("active");
-      infoTimeTab.classList.add("in");
-    }
-  }
-  // 檢查是否有 "使用紀錄" 的錨點
-  if (window.location.hash === "#info-record") {
-    // 切換到使用紀錄的頁籤
-    var infoRecordTab = document.getElementById("info-record");
-    if (infoRecordTab) {
-      infoRecordTab.classList.add("active");
-      infoRecordTab.classList.add("in");
-    }
-  }
-
-
-});
-
 //緩慢滑動
 $(document).on('click', 'a', function(event){
   event.preventDefault();
