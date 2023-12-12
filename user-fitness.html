@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>健身GO - 健身</title>
+  <link rel="icon" href="./css/img/logo-circle.png" type="image/x-icon"/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!--導覽列-->
+    <nav class="navbar navbar-default navbar-fixed-top at_top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header_index">
+                <img class="logo" src="./css/img/logo.png"/>
+            </a>
+            
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./user-info.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  。基本資訊
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./user-info.html">- 時數資訊</a>
+                  <br>
+                  <a class="dropdown-item" href="./user-info.html">- 使用紀錄</a>
+                </div>
+              </li>
+              <li><a href="./user-fitness.html">。健身</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--頁面內容-->
+    <header id="header_index" >
+        <h2 class="title header-title">健身</h2>
+    </header>
+
+    <section>
+      
+      <div class="container">
+        <div class="row">
+          <!-- 剩餘時數 -->
+          <div class="col-sm-6 col-xs-12">
+            <div class="window window-content window-circle window-fitness">
+              <span class="text-space">剩餘時數</span>
+              <br>
+              <label class="font-100">0</label>
+              <br>
+              <span>min</span>
+              <br>
+              <span class="window-title font-12">星期X  下午00:00</span>
+            </div>
+          </div>
+
+          <!-- 開始健身 -->
+          <div class="col-sm-6 col-xs-12">
+            <div class="div-btn">
+              <span class="text-hint">按下後請出示畫面<br>供櫃檯人員確認</span>
+              <br>
+              <button type="button" class="btn btn-primary btn-enter">進入<br>健身房</button>
+            </div>
+          </div>
+
+    </section>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js'></script>
+<script  src="./js/script.js"></script>
+
+</body>
+</html>

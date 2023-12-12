@@ -1,0 +1,389 @@
+@charset "UTF-8";
+* {
+    font-family: "Noto Sans TC";
+    position: relative;
+    color:#FFF;
+    /* border: solid 1px black; */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* 導覽列 */
+.navbar {
+    background-color: #FF6161;
+    height: 66px;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+/* 導覽列文字 */
+.navbar-default .navbar-nav>li>a {
+    color: #1F202F;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5.4px;
+    line-height: 30px;
+    transition-duration: 0.5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+}
+
+/* 導覽列子選單 */
+.navbar-nav>li>.dropdown-menu {
+    height: 116px;
+    background: rgba(255, 97, 97, 0.70);
+    text-align: center;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #FF6161;
+    color: #FFF;
+}
+
+.dropdown-item {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5.4px;
+    line-height: 48px;
+    color:#1F202F;
+    transition-duration: 0.5s;
+}
+
+.dropdown-item:hover {
+    color:#FFF;
+    text-decoration: none;
+}
+
+
+
+/* 照片背景 */
+header {
+    background: linear-gradient(0deg, rgba(31, 32, 47, 0.80), rgba(31, 32, 47, 0.80)), url("img/background.png");
+    background-size: cover;
+    background-position: center center;
+    padding-top:66px;
+    text-align: center;
+    height: 200px;
+}
+
+/* 登入頁背景 */
+.login-header {
+    height: 100%;
+}
+
+/* 登入頁標題 */
+.login-title {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+/* 頁面標題字 */
+.header-title {
+    padding-top: 25px;
+    font-size: 30px;
+    font-weight: 350;
+    letter-spacing: 15px;
+}
+
+section {
+    background: #1F202F;
+    min-height: 80%;
+    height:auto;
+    padding: 30px;
+}
+
+
+/* 毛玻璃視窗 */
+.window {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.10);
+    /* 毛玻璃 */
+    box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+#window-login,
+#window-info {
+    text-align: left;
+}
+
+.window-half {
+    width: 300px;
+}
+
+.window-nav {    
+    padding: 10px 40px;
+}
+
+.window-content {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.window-circle {
+    border-radius: 50%;
+    width: 290px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.window-fitness {
+    width: 310px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.window-record {
+    height: 420px;
+}
+
+#window-record {
+    padding-top: 120px;
+}
+
+.div-record {
+    display: inline-block;
+    text-align: center;
+    /* padding: 0 10px; */
+    min-width: 180px;
+    width: 40%;
+}
+
+.window>hr {
+    margin: 2px auto;
+    max-width: 350px;
+
+}
+
+#window-record {
+    padding-top: 120px;
+}
+
+.div-btn {
+    text-align: center;
+    padding-top: 120px;
+}
+
+/* 文字 */
+
+.font-100 {
+    font-size: 100px;
+    line-height: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.font-55 {
+    font-size: 55px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-12 {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.window-title {
+    color:#FF6161;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+
+.text-space {
+    letter-spacing: 10px;
+}
+
+.text-hint {
+    color: #FF6161;
+}
+
+
+/* 輸入框 */
+input {
+    height: 40px;
+    width: 238px;
+    color: #FFF;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+input:focus {
+    outline: 1px solid #FF6161;
+}
+
+/* 按鈕 */
+.btn {
+    border-radius: 50px;
+    width: 125px;
+    height: 44px;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+}
+
+.btn-primary {
+    background: rgba(255, 97, 97, 0.80);
+    box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.5s;
+    border: none;
+}
+
+.btn-enter {
+    border-radius: 20px;
+    width: 150px;
+    height: 90px;
+    font-size: 20px;
+    letter-spacing: 9px;
+    padding-left: 20px;
+    position: absolute;
+    right: 80%;
+    top: 180px
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: rgba(255, 44, 44, 0.8) !important; 
+}
+
+#btn-how {
+    position: absolute;
+    top: 230px;
+    left: 60px;
+}
+
+#btn-refresh {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    padding-top: 10px;
+}
+
+#btn-edit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 26px;
+    left: 260px;
+}
+
+/* 頁籤 */
+.nav-pills>li>a {
+    height: 42px;
+    border-radius: 0px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    color: #FFF;
+    transition-duration: 0.5s;
+    padding-right: 5px;
+}
+
+.nav-pills>li>a:hover {
+    color: #FFF;
+    background-color: #1F202F;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #FF6161;
+    font-weight: 400;
+    background-color: transparent;
+    border-bottom: 3px solid #FF6161;
+}
+
+.nav-pills>li.active>a:hover {
+    background-color: #1F202F;
+}
+
+
+/* 分頁 */
+.pagenumbers {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pagenumbers li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin: 5px;
+    transition: 0.5s;
+    font-size: 16px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.pagenumbers li:hover,
+.pagenumbers li.active {
+    background-color: #FF6161;
+}
+.pagenumbers li.active {
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 手機版面 */
+@media screen and (max-width: 768px) {
+    .window-record {
+        max-width: 330px;
+        height: auto;
+    }
+    #window-record {
+        width: 100%;
+        padding-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .div-btn {
+        padding-top: 0px;
+    }
+
+    .btn-enter {
+        top: 60px;
+    }
+}

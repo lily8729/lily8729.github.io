@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>健身GO - 基本資訊</title>
+  <link rel="icon" href="./css/img/logo-circle.png" type="image/x-icon"/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <!--導覽列-->
+  <nav class="navbar navbar-default navbar-fixed-top at_top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#header_index">
+              <img class="logo" src="./css/img/logo.png"/>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./user-info.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                。基本資訊
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./user-info.html">- 時數資訊</a>
+                <br>
+                <a class="dropdown-item" href="./user-info.html">- 使用紀錄</a>
+              </div>
+            </li>
+            <li><a href="./user-fitness.html">。健身</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+    <!--頁面內容-->
+    <header id="header_index">
+        <h2 class="header-title">基本資訊</h2>
+    </header>
+    
+    <section>
+      <!-- 頁籤 -->
+      <div class="window window-nav">
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="pill" href="#info-time">時數資訊</a>
+          </li>
+          <li>
+            <a data-toggle="pill" href="#info-record">使用紀錄</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 頁籤內容 -->
+      <div class="tab-content">
+        <!-- 時數資訊 -->
+        <div id="info-time"  class="tab-pane fade in active">
+          <div class="container">
+            <div class="row">
+              <!-- 剩餘時數 -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="window window-content window-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" viewBox="0 0 50 53" fill="none">
+                    <path d="M37.1488 46.7516C24.7882 57.4804 1.30322 47.9056 1.30322 28.3658C1.30322 13.9154 12.355 3.85134 24.7882 3.85134C30.9685 3.85134 37.604 6.34959 42.093 11.2057M42.093 11.2057H33.4406M42.093 11.2057V5.07706V1.3999M45.5103 38.3309L45.3777 38.5417C44.5671 39.8303 43.6121 41.022 42.5312 42.0939L41.6858 42.9323M48.2732 27.3884V27.6425C48.2732 29.6462 47.939 31.6358 47.2844 33.5295V33.5295" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M26.1697 12.3425L26.1697 28.7563" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M26.1697 28.7561L17.8809 34.2274" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  <br>
+                  <span class="text-space">剩餘時數</span>
+                  <br>
+                  <label class="font-100">0</label>
+                  <br>
+                  <span>min</span>
+                  <button type="button" id="btn-how" class="btn-circle btn-primary">？</button>
+                  <button type="button" id="btn-refresh" class="btn-circle btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 62 48" fill="none">
+                      <path d="M9.30005 20.8741C12.7759 6.2585 25.0195 -0.955006 36.0703 2.38124C41.5634 4.03962 46.8602 8.34697 49.682 14.4631M49.682 14.4631L41.9917 12.1413M49.682 14.4631L51.1561 8.26441L52.0406 4.54522" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M52.0405 26.9452C48.5647 41.5608 36.3211 48.7743 25.2703 45.4381C19.7772 43.7797 14.4804 39.4724 11.6586 33.3563M11.6586 33.3563L19.3489 35.678M11.6586 33.3563L10.1845 39.5549L9.3 43.2741" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- 客戶資訊 -->
+              <div class="col-sm-6 col-xs-12">
+                <div id="window-info" class="window window-content window-half">
+                  <span class="window-title">客戶資訊</span>
+                  <button type="button" id="btn-edit" class="btn-circle btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" viewBox="0 0 24 60" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.432 1.26539C21.2333 1.07365 20.9111 1.07365 20.7124 1.26539L19.2863 2.64144L21.4985 4.77601L22.9246 3.39996C23.1233 3.20822 23.1233 2.89734 22.9246 2.70559L21.432 1.26539ZM20.5477 5.69347L18.3355 3.55891L9.27386 12.3026L8.99829 14.5319C8.99064 14.5939 9.04398 14.6469 9.10837 14.6414L11.4861 14.4371L20.5477 5.69347Z" fill="white"/>
+                      <path d="M14.3999 4.23096H4.3999C3.29533 4.23096 2.3999 5.12639 2.3999 6.23096V18.4415C2.3999 19.5461 3.29533 20.4415 4.3999 20.4415H17.1999C18.3045 20.4415 19.1999 19.5461 19.1999 18.4415V10.0204" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                  <br>
+                  <br>
+                  <p id="info-name">姓名</p>
+                  <p id="info-email">Email</p>
+                  <p id="info-birth">生日</p>
+                  <p id="info-phone">手機</p>
+                  <p id="info-address">地址</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 使用紀錄 -->
+        <div id="info-record" class="tab-pane fade">
+          <div class="container">
+            <div class="row">
+              <!-- 剩餘時數 -->
+              <div class="col-sm-6 col-xs-12">
+                <div id="window-record" class="window window-content window-half window-record">
+                  <span class="text-space">剩餘時數</span>
+                  <br>
+                  <label class="font-100">0</label>
+                  <br>
+                  <span>min</span>
+                </div>
+              </div>
+              <!-- 使用紀錄 -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="window window-content window-record" style="width: 100%;">
+                  <div class="div-record">
+                    <span class="text-space font-20">使用紀錄</span>
+                    <br>
+                    <span class="font-12">20XX.XX.XX 00:00</span>
+                  </div>
+                  <div class="div-record">
+                    <span class="font-20">±</span>
+                    <label class="font-55">0</label>
+                    <span>min</span>
+                  </div>
+                  <hr>
+
+                  <div class="div-record">
+                    <span class="text-space font-20">使用紀錄</span>
+                    <br>
+                    <span class="font-12">20XX.XX.XX 00:00</span>
+                  </div>
+                  <div class="div-record">
+                    <span class="font-20">±</span>
+                    <label class="font-55">000</label>
+                    <span>min</span>
+                  </div>
+                  <hr>
+                  
+                  <div class="div-record">
+                    <span class="text-space font-20">使用紀錄</span>
+                    <br>
+                    <span class="font-12">20XX.XX.XX 00:00</span>
+                  </div>
+                  <div class="div-record">
+                    <span class="font-20">±</span>
+                    <label class="font-55">0</label>
+                    <span>min</span>
+                  </div>
+                  <hr>
+                  
+                  <div class="div-record">
+                    <span class="text-space font-20">使用紀錄</span>
+                    <br>
+                    <span class="font-12">20XX.XX.XX 00:00</span>
+                  </div>
+                  <div class="div-record">
+                    <span class="font-20">±</span>
+                    <label class="font-55">0</label>
+                    <span>min</span>
+                  </div>
+
+                  <!-- <div id="list" class="list"></div> -->
+                  <div id="pagination" class="pagenumbers"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js'></script>
+<script  src="./js/script.js"></script>
+
+</body>
+</html>
