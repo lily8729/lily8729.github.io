@@ -24,6 +24,11 @@ html, body {
     width: 150px;
 }
 
+.navbar-header {
+    position: relative;
+    z-index:1;
+}
+
 /* 導覽列文字 */
 .navbar-default .navbar-nav>li>a {
     color: #1F202F;
