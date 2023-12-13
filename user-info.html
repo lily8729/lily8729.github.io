@@ -79,7 +79,7 @@
                   <label class="font-100">0</label>
                   <br>
                   <span>min</span>
-                  <button type="button" id="btn-how" class="btn-circle btn-primary">？</button>
+                  <button href="#" id="btn-how" class="btn-circle btn-primary" data-toggle="modal" data-target="#modal-how">？</button>
                   <button type="button" id="btn-refresh" class="btn-circle btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 62 48" fill="none">
                       <path d="M9.30005 20.8741C12.7759 6.2585 25.0195 -0.955006 36.0703 2.38124C41.5634 4.03962 46.8602 8.34697 49.682 14.4631M49.682 14.4631L41.9917 12.1413M49.682 14.4631L51.1561 8.26441L52.0406 4.54522" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -105,6 +105,23 @@
                   <p id="info-birth">生日</p>
                   <p id="info-phone">手機</p>
                   <p id="info-address">地址</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 浮動視窗 modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modal-how" tabindex="-1" role="dialog" aria-labelledby="modal-how" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="window-title" id="myModalLabel">時數加值方式</h4>
+                </div>
+                <div class="modal-body">
+                  <span class="font-20">請至健身房找櫃台人員，提供會員帳號，即可進行加值與付款。</span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">OK !</button>
                 </div>
               </div>
             </div>

@@ -262,22 +262,8 @@ input:focus {
     box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     top: 50%;  
-    left: 50%;
-    transform: translate(-50%, 0%);
     transition-duration: 0.5s;
     border: none;
-}
-
-.btn-enter {
-    border-radius: 20px;
-    width: 150px;
-    height: 90px;
-    font-size: 20px;
-    letter-spacing: 9px;
-    padding-left: 20px;
-    position: absolute;
-    right: 80%;
-    top: 180px
 }
 
 .btn-primary:hover,
@@ -286,16 +272,21 @@ input:focus {
     background: rgba(255, 44, 44, 0.8) !important; 
 }
 
+#btn-login {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 #btn-how {
     position: absolute;
     top: 230px;
-    left: 60px;
+    left: 20px;
 }
 
 #btn-refresh {
     position: absolute;
     top: 230px;
-    left: 230px;
+    left: 195px;
     padding-top: 10px;
 }
 
@@ -304,7 +295,20 @@ input:focus {
     height: 30px;
     position: absolute;
     top: 26px;
-    left: 260px;
+    left: 250px;
+}
+
+#btn-enter {
+    border-radius: 20px;
+    width: 150px;
+    height: 90px;
+    font-size: 20px;
+    letter-spacing: 9px;
+    padding-left: 20px;
+    position: absolute;
+    right: auto;
+    top: 180px;
+    transform: translate(-50%, 0%);
 }
 
 /* 頁籤 */
@@ -370,6 +374,28 @@ input:focus {
 .pagenumbers li.active {
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* 浮動視窗Modal */
+.modal {
+    top: 30%;
+}
+
+.modal-content {
+    text-align: center;
+    border-radius: 10px;
+    background:  rgba(31, 32, 47, 0.80);
+    /* 毛玻璃 */
+    box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+    text-align: center;
+}
+
 
 
 /* 手機版面 */
