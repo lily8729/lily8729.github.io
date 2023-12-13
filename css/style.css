@@ -43,6 +43,8 @@ html, body {
     color: #FFF;
 }
 
+
+
 /* 導覽列子選單 */
 .navbar-nav>li>.dropdown-menu {
     height: 116px;
@@ -400,6 +402,40 @@ input:focus {
 
 /* 手機版面 */
 @media screen and (max-width: 768px) {
+    /* 手機選單 */
+    .navbar-default .navbar-collapse {
+        border: none;
+        background-color: rgba(255, 97, 97, 0.80);
+        margin-top: 6px;
+        text-align: left;
+    }
+    /* 子選單 */
+    .navbar-nav>li>.dropdown-menu {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .navbar-toggle {
+        border: none;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-toggle svg {
+        transition-duration: 0.5s;
+    }
+
+    .navbar-toggle:hover svg {
+        transform: rotate(45deg);
+    }
+
+    
+
+
+    /* 其他調整 */
     .window-record {
         max-width: 330px;
         height: auto;
