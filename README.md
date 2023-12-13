@@ -1,5 +1,5 @@
 # 前端練習專案 - 健身GO
-> 從健身館使用者、管理者角度出發，設計網頁端功能及介面。
+> 從健身房使用者、管理者角度出發，設計網頁端功能及介面。
 
 ## Prototype 設計
 > [設計圖](https://drive.google.com/file/d/1se8iriz43bejkCcEXcYHj_wl60zTcBzP/view?usp=sharing)
