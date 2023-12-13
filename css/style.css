@@ -75,7 +75,8 @@ html, body {
     transition-duration: 0.5s;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:focus {
     color:#FFF;
     text-decoration: none;
 }
