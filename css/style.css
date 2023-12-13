@@ -389,7 +389,7 @@ input:focus {
     /* 毛玻璃 */
     box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.10) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-    padding: 20px 40px;
+    padding: 20px 20px;
 }
 
 .modal-header,
@@ -415,6 +415,7 @@ input:focus {
         margin-left: 50px;
     }
 
+    /* 漢堡按鈕 */
     .navbar-toggle {
         border: none;
     }
@@ -432,8 +433,6 @@ input:focus {
         transform: rotate(45deg);
     }
 
-    
-
 
     /* 其他調整 */
     .window-record {
@@ -444,6 +443,10 @@ input:focus {
         width: 100%;
         padding-top: 40px;
         margin-bottom: 0px;
+    }
+
+    .modal-content {
+        padding: 20px 40px;
     }
 
     .div-btn {
