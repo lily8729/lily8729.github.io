@@ -48,6 +48,16 @@ html, body {
     color: #FFF;
 }
 
+#btn-logout {
+    color: #FFF;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+#btn-logout:hover {
+    font-weight: 500;
+}
+
 
 
 /* 導覽列子選單 */
@@ -419,6 +429,11 @@ input:focus {
     .navbar-nav>li>.dropdown-menu {
         text-align: left;
         margin-left: 50px;
+    }
+
+    #btn-logout {
+        margin-left: 8px;
+        margin-top: 20px;
     }
 
     /* 漢堡按鈕 */
