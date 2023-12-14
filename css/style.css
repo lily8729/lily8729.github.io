@@ -240,7 +240,7 @@ section {
 
 /* 客戶列表的分隔線 */
 .window-list>hr {
-    margin: 2px auto;
+    margin: -5px auto 15px auto;
     max-width: 600px;
     border-top: 1px solid #FF6161;
 }
@@ -283,9 +283,14 @@ section {
 }
 
 /* 客戶列表 - 列表標題 */
-.list-title p {
-    color: #FF6161;
-    display: inline;
+.table-list {
+    text-align: left;
+    width: 100%;
+    line-height: 50px;
+}
+
+.table-title {
+    border-bottom: 1px solid #FF6161;
 }
 
 /* ------------------------------------------------------------------------------------ */
