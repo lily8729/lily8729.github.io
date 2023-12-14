@@ -24,13 +24,6 @@ $(window).on("load resize", function() {
   }
 });
 
-//緩慢滑動
-$(document).on('click', 'a', function(event){
-  event.preventDefault();
-  $('html, body').animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 500);
-});
 
 // 分頁
 const list_items = [
