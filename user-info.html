@@ -82,11 +82,9 @@
                     <path d="M26.1697 28.7561L17.8809 34.2274" stroke="white" stroke-width="2" stroke-linecap="round"/>
                   </svg>
                   <br>
-                  <span class="text-space">剩餘時數</span>
-                  <br>
-                  <label class="font-100">0</label>
-                  <br>
-                  <span>min</span>
+                  <p class="text-space">剩餘時數</p>
+                  <p class="font-120">0</p>
+                  <p>min</p>
                   <button href="#" id="btn-how" class="btn-circle btn-primary" data-toggle="modal" data-target="#modal-how">？</button>
                   <button type="button" id="btn-refresh" class="btn-circle btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 62 48" fill="none">
@@ -99,14 +97,13 @@
               <!-- 客戶資訊 -->
               <div class="col-sm-6 col-xs-12">
                 <div id="window-info" class="window window-content window-half">
-                  <span class="window-title">客戶資訊</span>
+                  <p class="window-title">客戶資訊</p>
                   <button type="button" id="btn-edit" class="btn-circle btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" viewBox="0 0 24 60" fill="none">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M21.432 1.26539C21.2333 1.07365 20.9111 1.07365 20.7124 1.26539L19.2863 2.64144L21.4985 4.77601L22.9246 3.39996C23.1233 3.20822 23.1233 2.89734 22.9246 2.70559L21.432 1.26539ZM20.5477 5.69347L18.3355 3.55891L9.27386 12.3026L8.99829 14.5319C8.99064 14.5939 9.04398 14.6469 9.10837 14.6414L11.4861 14.4371L20.5477 5.69347Z" fill="white"/>
                       <path d="M14.3999 4.23096H4.3999C3.29533 4.23096 2.3999 5.12639 2.3999 6.23096V18.4415C2.3999 19.5461 3.29533 20.4415 4.3999 20.4415H17.1999C18.3045 20.4415 19.1999 19.5461 19.1999 18.4415V10.0204" stroke="white" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                   </button>
-                  <br>
                   <br>
                   <p id="info-name">姓名</p>
                   <p id="info-email">Email</p>
@@ -126,7 +123,7 @@
                   <h4 class="window-title" id="myModalLabel">時數加值方式</h4>
                 </div>
                 <div class="modal-body">
-                  <span class="font-20">請至健身房找櫃台人員，提供會員帳號，即可進行加值與付款。</span>
+                  <p class="font-20">請至健身房找櫃台人員，提供會員帳號，即可進行加值與付款。</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-primary" data-dismiss="modal">OK !</button>
@@ -142,65 +139,52 @@
             <div class="row">
               <!-- 剩餘時數 -->
               <div class="col-sm-6 col-xs-12">
-                <div id="window-record" class="window window-content window-half window-record">
-                  <span class="text-space">剩餘時數</span>
-                  <br>
-                  <label class="font-100">0</label>
-                  <br>
-                  <span>min</span>
+                <div id="window-time" class="window window-content window-half window-record">
+                  <p class="text-space">剩餘時數</p>
+                  <p class="font-120">0</p>
+                  <p>min</p>
                 </div>
               </div>
               <!-- 使用紀錄 -->
               <div class="col-sm-6 col-xs-12">
                 <div class="window window-content window-record" style="width: 100%;">
                   <div class="div-record">
-                    <span class="text-space font-20">使用紀錄</span>
-                    <br>
-                    <span class="font-12">20XX.XX.XX 00:00</span>
+                    <p class="text-space font-20">使用紀錄</p>
+                    <p class="font-12">20XX.XX.XX 00:00</p>
                   </div>
                   <div class="div-record">
-                    <span class="font-20">±</span>
-                    <label class="font-55">0</label>
-                    <span>min</span>
+                    <p class="font-20">± <span class="font-55">0</span> min</p>
                   </div>
                   <hr>
 
                   <div class="div-record">
-                    <span class="text-space font-20">使用紀錄</span>
-                    <br>
-                    <span class="font-12">20XX.XX.XX 00:00</span>
+                    <p class="text-space font-20">使用紀錄</p>
+                    <p class="font-12">20XX.XX.XX 00:00</p>
                   </div>
                   <div class="div-record">
-                    <span class="font-20">±</span>
-                    <label class="font-55">000</label>
-                    <span>min</span>
+                    <p class="font-20">± <span class="font-55">0</span> min</p>
                   </div>
                   <hr>
                   
                   <div class="div-record">
-                    <span class="text-space font-20">使用紀錄</span>
-                    <br>
-                    <span class="font-12">20XX.XX.XX 00:00</span>
+                    <p class="text-space font-20">使用紀錄</p>
+                    <p class="font-12">20XX.XX.XX 00:00</p>
                   </div>
                   <div class="div-record">
-                    <span class="font-20">±</span>
-                    <label class="font-55">0</label>
-                    <span>min</span>
+                    <p class="font-20">± <span class="font-55">0</span> min</p>
                   </div>
                   <hr>
                   
                   <div class="div-record">
-                    <span class="text-space font-20">使用紀錄</span>
-                    <br>
-                    <span class="font-12">20XX.XX.XX 00:00</span>
+                    <p class="text-space font-20">使用紀錄</p>
+                    <p class="font-12">20XX.XX.XX 00:00</p>
                   </div>
                   <div class="div-record">
-                    <span class="font-20">±</span>
-                    <label class="font-55">0</label>
-                    <span>min</span>
+                    <p class="font-20">± <span class="font-55">0</span> min</p>
                   </div>
 
-                  <!-- <div id="list" class="list"></div> -->
+                  <!-- 頁數 -->
+                  <div id="list" class="list"></div>
                   <div id="pagination" class="pagenumbers"></div>
 
                 </div>

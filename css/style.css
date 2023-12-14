@@ -14,6 +14,7 @@ html, body {
     font-size: 16px;
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 文字反白顏色 */
 ::-moz-selection { /* Code for Firefox */
     color: #FFF;
@@ -25,6 +26,7 @@ html, body {
     background: #ce5757;
   }
 
+  /* ------------------------------------------------------------------------------------ */
 /* 導覽列 */
 .navbar {
     background-color: #FF6161;
@@ -45,6 +47,7 @@ html, body {
     z-index:1;
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 導覽列文字 */
 .navbar-default .navbar-nav>li>a {
     color: #1F202F;
@@ -68,8 +71,6 @@ html, body {
 #btn-logout:hover {
     font-weight: 500;
 }
-
-
 
 /* 導覽列子選單 */
 .navbar-nav>li>.dropdown-menu {
@@ -103,7 +104,7 @@ html, body {
 }
 
 
-
+/* ------------------------------------------------------------------------------------ */
 /* 照片背景 */
 header {
     background: linear-gradient(0deg, rgba(31, 32, 47, 0.80), rgba(31, 32, 47, 0.80)), url("img/background.png");
@@ -114,6 +115,7 @@ header {
     height: 200px;
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 登入頁背景 */
 .login-header {
     height: 100%;
@@ -126,6 +128,7 @@ header {
     letter-spacing: 7px;
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 頁面標題字 */
 .header-title {
     padding-top: 25px;
@@ -141,7 +144,7 @@ section {
     padding: 30px;
 }
 
-
+/* ------------------------------------------------------------------------------------ */
 /* 毛玻璃視窗 */
 .window {
     text-align: center;
@@ -157,73 +160,98 @@ section {
     padding: 30px;
 }
 
+
+/* 登入頁
+基本資訊 - 時數資訊 - 客戶資訊 */
 #window-login,
 #window-info {
     text-align: left;
 }
 
+/* bootstrap網格占一半 */
 .window-half {
     width: 300px;
 }
 
+/* 頁籤 */
 .window-nav {    
     padding: 10px 40px;
 }
 
+/* 頁面內容 */
 .window-content {
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
+/* 圓形 */
+/* 基本資訊 - 時數資訊 - 剩餘時數 
+健身剩餘時數 */
 .window-circle {
     border-radius: 50%;
-    width: 290px;
-    padding-top: 35px;
-    padding-bottom: 40px;
+    width: 350px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
+/* 基本資訊 - 使用紀錄 - 剩餘時數 */
+#window-time {
+    padding-top: 120px;
+}
+
+/* 基本資訊 - 使用紀錄 */
+.window-record {
+    height: 420px;
+    padding-top: 60px;
+}
+
+/* 基本資訊 - 使用紀錄 - 使用紀錄內的各行數值 */
+.div-record {
+    display: inline-block;
+    text-align: center;
+    min-width: 140px;
+    width: 40%;
+    line-height: 10px;
+}
+
+/* 基本資訊 - 使用紀錄 - 使用紀錄內的分隔線 */
+.window-record>hr {
+    margin: 10px auto 25px auto;
+    max-width: 350px;
+}
+
+/* 健身剩餘時數 */
 .window-fitness {
-    width: 310px;
+    width: 350px;
     padding-top: 65px;
     padding-bottom: 65px;
 }
 
-.window-record {
-    height: 420px;
-}
-
-#window-record {
-    padding-top: 120px;
-}
-
-.div-record {
-    display: inline-block;
-    text-align: center;
-    /* padding: 0 10px; */
-    min-width: 180px;
-    width: 40%;
-}
-
-.window>hr {
-    margin: 2px auto;
-    max-width: 350px;
-
-}
-
-#window-record {
-    padding-top: 120px;
-}
-
+/* 健身 - 右側欄位 */
 .div-btn {
     text-align: center;
     padding-top: 120px;
 }
 
+/* 客戶列表 */
+.window-list {
+    max-width: 700px;
+}
+
+/* 客戶列表的分隔線 */
+.window-list>hr {
+    margin: 2px auto;
+    max-width: 600px;
+    border-top: 1px solid #FF6161;
+}
+
+/* ------------------------------------------------------------------------------------ */
 /* 文字 */
 
-.font-100 {
-    font-size: 100px;
-    line-height: 100px;
+.font-120 {
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -240,21 +268,27 @@ section {
     letter-spacing: 1.2px;
 }
 
+.text-space {
+    letter-spacing: 10px;
+}
+
 .window-title {
     color:#FF6161;
     font-weight: 500;
     letter-spacing: 8px;
 }
 
-.text-space {
-    letter-spacing: 10px;
-}
-
 .text-hint {
     color: #FF6161;
 }
 
+/* 客戶列表 - 列表標題 */
+.list-title p {
+    color: #FF6161;
+    display: inline;
+}
 
+/* ------------------------------------------------------------------------------------ */
 /* 輸入框 */
 input {
     height: 40px;
@@ -272,6 +306,7 @@ input:focus {
     outline: 1px solid #FF6161;
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 按鈕 */
 .btn {
     border-radius: 50px;
@@ -306,19 +341,22 @@ input:focus {
     transform: translate(-50%, 0%);
 }
 
+/* 基本資訊 - 時數資訊 - 剩餘時數 */
 #btn-how {
     position: absolute;
-    top: 230px;
+    top: 270px;
     left: 20px;
 }
 
+/* 基本資訊 - 時數資訊 - 剩餘時數 */
 #btn-refresh {
     position: absolute;
-    top: 230px;
-    left: 195px;
+    top: 270px;
+    left: 260px;
     padding-top: 10px;
 }
 
+/* 基本資訊 - 時數資訊 - 客戶資訊 */
 #btn-edit {
     width: 30px;
     height: 30px;
@@ -327,6 +365,7 @@ input:focus {
     left: 250px;
 }
 
+/* 健身 - 進入健身房 */
 #btn-enter {
     border-radius: 20px;
     width: 150px;
@@ -340,6 +379,7 @@ input:focus {
     transform: translate(-50%, 0%);
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 頁籤 */
 .nav-pills>li>a {
     height: 42px;
@@ -370,7 +410,7 @@ input:focus {
     background-color: #1F202F;
 }
 
-
+/* ------------------------------------------------------------------------------------ */
 /* 分頁 */
 .pagenumbers {
     margin-top: 15px;
@@ -404,6 +444,7 @@ input:focus {
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* ------------------------------------------------------------------------------------ */
 /* 浮動視窗Modal */
 .modal {
     top: 30%;
@@ -426,7 +467,7 @@ input:focus {
 }
 
 
-
+/* ------------------------------------------------------------------------------------ */
 /* 手機版面 */
 @media screen and (max-width: 768px) {
     /* 手機選單 */
