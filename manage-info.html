@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>健身GO - 客戶資訊</title>
+  <link rel="icon" href="./css/img/logo-circle.png" type="image/x-icon"/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <!--導覽列-->
+  <nav class="navbar navbar-default navbar-fixed-top at_top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- 手機頁面選單btn (漢堡選單) -->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect width="6.78571" height="6.78571" fill="#1F202F"/>
+                <rect y="12.2143" width="6.78571" height="6.78571" fill="#1F202F"/>
+                <rect x="12.2143" width="6.78571" height="6.78571" fill="#1F202F"/>
+                <rect x="12.2143" y="12.2143" width="6.78571" height="6.78571" fill="#1F202F"/>
+              </svg>
+          </button>
+
+          <a class="navbar-brand" href="#header_index">
+              <img class="logo" src="./css/img/logo.png"/>
+          </a>
+          
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/manage-customer.html">。客戶列表</a></li>
+            <li><a href="/manage-register.html">。客戶註冊</a></li>
+            <li><a id="btn-logout" href="/index.html">登出</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+    <!--頁面內容-->
+    <header id="header_index" >
+        <div style="text-align: left; margin-top: 10px;">
+            <button type="button" id="btn-back" style="background-color: transparent; border: none;" onclick="location.href='/manage-customer.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="38" viewBox="0 0 60 38" fill="none">
+                    <path d="M49.0909 19.5457H13.6363L19.9675 11.4028" stroke="white" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <h2 class="title header-title" style="margin-top: -35px;">客戶資訊</h2>
+    </header>
+    <section>
+        <!-- 使用紀錄 -->
+          <div class="container">
+            <div class="row">
+                <!-- 客戶資訊 -->
+                <div class="col-sm-6 col-xs-12">
+                    <div id="window-customer" class="window window-content">
+                        <div style="word-break: break-all; text-align: left;">
+                            <p class="window-title">姓名：</p>
+                            <p id="customer-name">姓名</p>
+                            <hr>
+                            <p class="window-title">Email：</p>
+                            <p id="customer-email">EmailEmailEmailEmailEmailEmailEmail</p>
+                            <hr>
+                            <p class="window-title">生日：</p>
+                            <p id="customer-birth">生日</p>
+                            <hr>
+                            <p class="window-title">手機：</p>
+                            <p id="customer-phone">手機</p>
+                            <hr>
+                            <p class="window-title">地址：</p>
+                            <p id="customer-address">地址</p>
+                            <hr>
+                            <p class="window-title">剩餘時數：</p>
+                            <p id="customer-time">剩餘時數</p>
+                        </div>
+                        <button href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-time">時數加值</button>
+                    </div>
+                </div>
+                <!-- 使用紀錄 -->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="window window-content window-record">
+                    <div class="div-record">
+                        <p class="text-space font-20">使用紀錄</p>
+                        <p class="font-12">20XX.XX.XX 00:00</p>
+                    </div>
+                    <div class="div-record">
+                        <p class="font-20">± <span class="font-55">0</span> min</p>
+                    </div>
+                    <hr>
+        
+                    <div class="div-record">
+                        <p class="text-space font-20">使用紀錄</p>
+                        <p class="font-12">20XX.XX.XX 00:00</p>
+                    </div>
+                    <div class="div-record">
+                        <p class="font-20">± <span class="font-55">0</span> min</p>
+                    </div>
+                    <hr>
+                    
+                    <div class="div-record">
+                        <p class="text-space font-20">使用紀錄</p>
+                        <p class="font-12">20XX.XX.XX 00:00</p>
+                    </div>
+                    <div class="div-record">
+                        <p class="font-20">± <span class="font-55">0</span> min</p>
+                    </div>
+                    <hr>
+                    
+                    <div class="div-record">
+                        <p class="text-space font-20">使用紀錄</p>
+                        <p class="font-12">20XX.XX.XX 00:00</p>
+                    </div>
+                    <div class="div-record">
+                        <p class="font-20">± <span class="font-55">0</span> min</p>
+                    </div>
+        
+                    <!-- 頁數 -->
+                    <div id="list" class="list"></div>
+                    <div id="pagination" class="pagenumbers"></div>
+        
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 浮動視窗 modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modal-time" tabindex="-1" role="dialog" aria-labelledby="modal-time" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="window-title" id="myModalLabel">時數加值方式</h4>
+                </div>
+                <div class="modal-body">
+                  <p class="font-20">請至健身房找櫃台人員，提供會員帳號，即可進行加值與付款。</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">OK !</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js'></script>
+<script  src="./js/script.js"></script>
+
+</body>
+</html>

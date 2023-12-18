@@ -246,6 +246,16 @@ section {
     border-top: 1px solid #FF6161;
 }
 
+/* 客戶列表 - 客戶資訊 */
+#window-customer, .window-record {
+    min-width: 350px;
+    width: 100%;
+}
+
+#info {
+    display: flex;
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* 文字 */
 
@@ -296,6 +306,19 @@ section {
 
 td, th {
     padding: 0 20px;
+}
+
+td {
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #1F202F;
+    transition-duration: 0.5s;
+}
+
+.table-title:hover {
+    background-color: transparent;
 }
 
 /* 列表X滑動 */
