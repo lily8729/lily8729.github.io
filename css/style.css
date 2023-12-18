@@ -440,6 +440,48 @@ input:focus {
     transform: translate(-50%, 0%);
 }
 
+/* 客戶列表 - 客戶資訊 - 時數加值 */
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+.btn-transparent:hover {
+    color: #FFF;
+    background-color: #1F202F;
+    transition-duration: 0.5s;
+    box-shadow: 0px 4px 6px 3px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input input[type=number] { 
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #FFF;
+    font-size: 80px;
+    height: auto;
+    max-width: 180px;
+    text-align: center;
+}
+
+.number-input input[type=number]:focus { 
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #FF6161;
+}
+
+
 /* ------------------------------------------------------------------------------------ */
 /* 頁籤 */
 .nav-pills>li>a {
@@ -559,10 +601,6 @@ input:focus {
     margin-top: -5px;
 }
 
-.btn-search:hover,
-.btn-search:active {
-    color: #FF6161;
-}
 
 /* ------------------------------------------------------------------------------------ */
 /* 手機版面 */

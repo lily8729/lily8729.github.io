@@ -130,16 +130,22 @@
           <!-- 浮動視窗 modal -->
           <!-- Modal -->
           <div class="modal fade" id="modal-time" tabindex="-1" role="dialog" aria-labelledby="modal-time" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-md">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="window-title" id="myModalLabel">時數加值方式</h4>
+                  <h4 class="window-title" id="myModalLabel">時數加值</h4>
                 </div>
                 <div class="modal-body">
-                  <p class="font-20">請至健身房找櫃台人員，提供會員帳號，即可進行加值與付款。</p>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn-circle btn-transparent">-</button>
+                        <input class="quantity" min="1" name="quantity" value="10" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn-circle btn-transparent">+</button>
+                    </div>
+                    <p class="font-20">min</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">OK !</button>
+                    <button type="button" class="btn btn-transparent" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">加值</button>
                 </div>
               </div>
             </div>
