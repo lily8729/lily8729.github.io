@@ -236,6 +236,7 @@ section {
 /* 客戶列表 */
 .window-list {
     max-width: 700px;
+    margin-top: 10px;
 }
 
 /* 客戶列表的分隔線 */
@@ -292,6 +293,38 @@ section {
 .table-title {
     border-bottom: 1px solid #FF6161;
 }
+
+td, th {
+    padding: 0 20px;
+}
+
+/* 列表X滑動 */
+.div-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.div-table table {
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* 列表scroll bar */
+.div-table::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; 
+    border-radius: 10px;
+}
+/* Add a thumb */
+.div-table::-webkit-scrollbar-thumb {
+    background: #FF6161;
+    border-radius: 10px;
+  }
+
 
 /* ------------------------------------------------------------------------------------ */
 /* 輸入框 */
@@ -471,6 +504,42 @@ input:focus {
     text-align: center;
 }
 
+/* ------------------------------------------------------------------------------------ */
+/* 搜尋框 */
+.form-inline {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inline .form-control {
+    vertical-align: top;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0px;
+    color: #FFF;
+}
+
+.form-control:focus {
+    border-color :#FF6161;
+    box-shadow: none;
+}
+
+.btn-search {
+    background-color: transparent;
+    width: auto;
+    margin-top: -5px;
+}
+
+.btn-search:hover,
+.btn-search:active {
+    color: #FF6161;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* 手機版面 */
