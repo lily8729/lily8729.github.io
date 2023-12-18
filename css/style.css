@@ -164,7 +164,8 @@ section {
 /* 登入頁
 基本資訊 - 時數資訊 - 客戶資訊 */
 #window-login,
-#window-info {
+#window-info,
+#window-register {
     text-align: left;
 }
 
@@ -254,6 +255,21 @@ section {
 
 #info {
     display: flex;
+}
+
+/* 客戶註冊 */
+.window-register {
+    width: 100%;
+    max-width: 500px;
+}
+
+.window-register input {
+    width: 100%;
+}
+
+.window-register div {
+    text-align: center;
+    
 }
 
 /* ------------------------------------------------------------------------------------ */
